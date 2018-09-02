@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="449.0" prefWidth="557.0" style="-fx-background-color: darkgrey;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <JFXTextField fx:id="username" layoutX="299.0" layoutY="108.0" promptText="Enter Username" unFocusColor="WHITE" />
+      <JFXPasswordField fx:id="password" layoutX="299.0" layoutY="209.0" promptText="Enter Password" unFocusColor="#fffefe" />
+      <Label layoutX="212.0" layoutY="113.0" text="Username" textAlignment="CENTER" />
+      <Label layoutX="214.0" layoutY="214.0" text="Password" textAlignment="CENTER" />
+      <JFXButton fx:id="buttonLogin" layoutX="397.0" layoutY="294.0" onAction="#handleLogin" style="-fx-background-color: blue;" text="Login" textAlignment="CENTER" />
+      <JFXButton layoutX="299.0" layoutY="294.0" style="-fx-background-color: blue;" text="Register" textAlignment="CENTER" />
+      <MenuBar layoutY="-2.0" style="-fx-background-color: black;">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem fx:id="menuItemClose" mnemonicParsing="false" onAction="#handleClose" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
